@@ -70,6 +70,7 @@ add_filter('redirect_post_location',                           'FLBuilderAdminPo
 add_filter('page_row_actions',                                 'FLBuilderAdminPosts::render_row_actions_link');
 add_filter('post_row_actions',                                 'FLBuilderAdminPosts::render_row_actions_link');
 add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'FLBuilderAdmin::render_plugin_action_links');
+add_filter('network_admin_plugin_action_links_' . plugin_basename(__FILE__), 'FLBuilderAdmin::render_plugin_action_links');
 add_filter('all_plugins',                                      'FLBuilderAdmin::white_label_plugins_page');
 
 /* AJAX Actions */
